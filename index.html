@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>扫雷</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">扫雷</div>
+        <div class="choice">
+            <fieldset>
+                <legend>选择难度</legend>
+                <input type="radio" name="level" class="level" id="low" value="9">
+                <label>初级(9*9，雷数10)</label>
+                <br>
+                <input type="radio" name="level" class="level" id="medium" value="16">
+                <label>中级(16*16，雷数40)</label>
+                <br>
+                <input type="radio" name="level" class="level" id="high" value="30">
+                <label>高级(30*16，雷数99)</label>
+                <br>
+            </fieldset>
+            <button id="start">开始游戏</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+.main,.gamearea{
+    margin:10px auto;
+    /*  */
+    background:#EEE;
+    width:600px;
+    zoom:1;
+    text-align: center;
+}
+.title{
+    padding-top: 20px;
+    font: bold 60px 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+.choice{
+    padding:20px;
+    font: 20px 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+button{
+    width: 150px;
+    height: 35px;
+    margin: 20px auto;
+}
+.operation {
+    padding:20px;
+    background-color: aliceblue;
+    width:150px;
+    float:right;
+    text-align:center;
+    font: 15px 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+table {
+    background:#CCC;
+    float:left;
+}
+table td {
+    border:2px outset #EEE;
+    font-size:15px;
+    width:22px;
+    height:22px;
+    text-align:center;
+    cursor:pointer;
+}
+table td:hover {
+    background-color:#AAA;
+}
+table td.normal {
+    border:2px solid #EEE;
+    background-color:#AAA;
+}
+table td.normal:hover {
+    background-color:#AAA;
+}
+
+.mine {
+    background-image:url(mine.svg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: 20px;
+}
+.flag {
+    background-image:url(flag.svg);
+    background-size: 20px;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+fieldset {
+    margin:10px 0;
+    line-height:25px;
+}
+#tip{
+    margin: 10px auto;
+}
+
+/* .main:after {
+    clear: both;
+    display: block;
+    content: "";
+    line-height: 0;
+    height: 0;
+    visibility:hidden;
+} */
+
+/* .main table {
+    background:#CCC;
+    float:left;
+}
+
+.main 
+
+.main 
+.main #operation {
+    width:180px;
+    float:right;
+    text-align:center;
+}
+
+
+
+.main 
+
+.main 
+
+ */
+/* 
+
+.main .tip {
+    font-size:14px;
+    margin:5px;
+}
+
+.main .tip ul {
+
+}
+
+.main .tip ul li {
+    margin:5px 0;
+    line-height:20px;
+}
+.main .light{
+    font-size:30px;
+}
+.main .red {
+    color:red;
+}
+.main .f60 {
+    color:#F60;
+}
+.main input[type=button] {
+    padding:2px 10px;
+    margin:5px;
+    font-size:20px;
+    cursor:pointer;
+}
+.main .txtleft {
+    text-align:left;
+}
+
+.main input[type='radio'],
+.main fieldset label {
+    cursor:pointer;
+}
+
+.main  */
