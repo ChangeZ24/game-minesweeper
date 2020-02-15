@@ -14,9 +14,11 @@ Html + CSS + JavaScript
 
 ### 首页
 
+![首页](https://github.com/ChangeZ24/game-minesweeper/blob/master/index.jpg)
 
 ### 游戏页
 
+![游戏页](https://github.com/ChangeZ24/game-minesweeper/blob/master/minesweeper.jpg)
 
 ## 实现功能
 
