@@ -1,10 +1,14 @@
-# 扫雷---minesweeper
+# 扫雷---Mine Sweeper
 
 ## 使用语言
 
 Html + CSS + JavaScript
 
-该半个月在[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)网站学习网页开发，在学完HTML、CSS、JavaScript相关内容以后，决定用项目练练手，在[实验楼Web开发](https://www.shiyanlou.com/courses/?tag=%E5%85%A8%E9%83%A8&fee=all&sort=default&category=Web%20%E5%89%8D%E7%AB%AF&page=2)找到仅有的几个纯Html + CSS + JavaScript项目作为练习，首先即为网页版扫雷游戏实现。
+该半个月在[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)网站学习网页开发，在学完HTML、CSS、JavaScript相关内容以后，决定用项目练练手。
+
+在[实验楼Web开发](https://www.shiyanlou.com/courses/?tag=%E5%85%A8%E9%83%A8&fee=all&sort=default&category=Web%20%E5%89%8D%E7%AB%AF&page=2)找到仅有的几个纯Html + CSS + JavaScript项目作为练习。
+
+此项目即为纯Html + CSS + JavaScript的网页版扫雷游戏实现。
 
 ## 实现效果
 
@@ -87,7 +91,7 @@ landArrs[rNum][cNum] = 9;//放置雷
 
 ## 待实现功能
 
-1. 双击设定
+### 双击设定
 
 同时按下左键和右键完成双击。当双击位置周围已标记雷数等于该位置数字时操作有效，相当于对该数字周围未打开的方块均进行一次左键单击操作。地雷未标记完全时使用双击无效。若数字周围有标错的地雷，则游戏结束，标错的地雷上会显示一个“×”
 
