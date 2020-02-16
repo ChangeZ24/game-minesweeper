@@ -2,11 +2,11 @@
 
 ## 使用语言
 
-Html + CSS + JavaScript
+HTML + CSS + JavaScript
 
 该半个月在[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)网站学习网页开发，在学完HTML、CSS、JavaScript相关内容以后，决定用项目练练手。
 
-在[实验楼Web开发](https://www.shiyanlou.com/courses/?tag=%E5%85%A8%E9%83%A8&fee=all&sort=default&category=Web%20%E5%89%8D%E7%AB%AF&page=2)找到仅有的几个纯Html + CSS + JavaScript项目作为练习。
+在[实验楼Web开发](https://www.shiyanlou.com/courses/?tag=%E5%85%A8%E9%83%A8&fee=all&sort=default&category=Web%20%E5%89%8D%E7%AB%AF&page=2)找到仅有的几个纯HTML + CSS + JavaScript项目作为练习。
 
 此项目即为纯Html + CSS + JavaScript的网页版扫雷游戏实现。
 
