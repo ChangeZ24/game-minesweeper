@@ -14,11 +14,11 @@ HTML + CSS + JavaScript
 
 ### 首页
 
-![首页](https://github.com/ChangeZ24/game-minesweeper/blob/master/index.jpg)
+![首页](https://github.com/ChangeZ24/game-minesweeper/blob/master/show/index.jpg)
 
 ### 游戏页
 
-![游戏页](https://github.com/ChangeZ24/game-minesweeper/blob/master/minesweeper.jpg)
+![游戏页](https://github.com/ChangeZ24/game-minesweeper/blob/master/show/showall.gif)
 
 ## 实现功能
 
@@ -91,11 +91,16 @@ landArrs[rNum][cNum] = 9;//放置雷
 2. 剩余雷数
 > 每标记一处，html更新一次内容
 
-## 待实现功能
+### 双击设定：满足已标记数与自身数字一致时自动打开格子
 
-### 双击设定
+1、双击已打开的数字格。
 
-同时按下左键和右键完成双击。当双击位置周围已标记雷数等于该位置数字时操作有效，相当于对该数字周围未打开的方块均进行一次左键单击操作。地雷未标记完全时使用双击无效。若数字周围有标错的地雷，则游戏结束，标错的地雷上会显示一个“×”
+> 当双击位置周围已标记雷数等于该位置数字时操作有效，相当于对该数字周围未打开的方块均进行一次左键单击操作。
+> 地雷未标记完全时使用双击无效。
+
+2. 若数字周围有标错的地雷，则游戏结束，标错的地雷上会显示一个“×”
+
+![标记错](https://github.com/ChangeZ24/game-minesweeper/blob/master/show/showerror.gif)
 
 ## 参考内容
 
