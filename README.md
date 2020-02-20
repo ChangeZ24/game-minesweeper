@@ -10,6 +10,8 @@ HTML + CSS + JavaScript
 
 此项目即为纯Html + CSS + JavaScript的网页版扫雷游戏实现。
 
+在线试玩页面：http://awesolynn.me/game-minesweeper/
+
 ## 实现效果
 
 ### 首页
