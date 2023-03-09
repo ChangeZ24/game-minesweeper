@@ -4,10 +4,6 @@
 
 HTML + CSS + JavaScript
 
-该半个月在[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)网站学习网页开发，在学完HTML、CSS、JavaScript相关内容以后，决定用项目练练手。
-
-在[实验楼Web开发](https://www.shiyanlou.com/courses/?tag=%E5%85%A8%E9%83%A8&fee=all&sort=default&category=Web%20%E5%89%8D%E7%AB%AF&page=2)找到仅有的几个纯HTML + CSS + JavaScript项目作为练习。
-
 此项目即为纯Html + CSS + JavaScript的网页版扫雷游戏实现。
 
 在线试玩页面：http://awesolynn.me/game-minesweeper/
@@ -65,12 +61,48 @@ landArrs[rNum][cNum] = 9;//放置雷
 
 //3.按雷位置，计算其周边数字
 //算法：遍历每个雷，将每个雷上下左右8格均+1
+for (var i = 0; i < this.rowCount; i++) {
+    for (var j = 0; j < this.colCount; j++) {
+      if (this.landArrs[i][j] == 9) {
+        //雷位置
+        //雷上一排
+        this.calculateNoLandMine(this.landArrs, i - 1, j - 1);
+        this.calculateNoLandMine(this.landArrs, i - 1, j);
+        this.calculateNoLandMine(this.landArrs, i - 1, j + 1);
+        //雷下一排
+        this.calculateNoLandMine(this.landArrs, i + 1, j - 1);
+        this.calculateNoLandMine(this.landArrs, i + 1, j);
+        this.calculateNoLandMine(this.landArrs, i + 1, j + 1);
+        //雷左右
+        this.calculateNoLandMine(this.landArrs, i, j - 1);
+        this.calculateNoLandMine(this.landArrs, i, j + 1);
+      }
+    }
+  }
+  
+// calculateNoLandMine
+mineSweeper.prototype.calculateNoLandMine = function(array, x, y) {
+  if (x >= 0 && x < this.rowCount && y >= 0 && y < this.colCount) {
+    if (array[x][y] != 9) {
+      array[x][y]++;
+    }
+  }
+};
 ```
 4. 点中雷，游戏失败
 
 ### 右键点击插旗或取消旗子
 
-1. 为每个格子绑定onmousedown事件，通过其event.button值确定点击右键
+1. 为每个格子绑定onmousedown事件，通过其event.button值确定点击右键，同时禁用右键菜单
+```
+// event.button确定左右键
+//events.button==0  鼠标左键 events.button==2  鼠标右键 events.button==2  鼠标左右键同时按下
+
+// 禁用右键菜单
+document.oncontextmenu = function() {
+    return false;
+};
+```
 
 2. 点击右键则将此格的class设置为flag，按CSS样式放置旗子背景图---->插旗
 
@@ -82,6 +114,7 @@ landArrs[rNum][cNum] = 9;//放置雷
 > 1. 点击格子值为0，则以该格为中心查看其周围8个格
 > 2. 若其周围格为被打开过，则打开该格。
 > 3. 若其周围格再次遇到0，自动循环查找
+
 
 ### 花费时间即剩余雷数计算
 
@@ -97,20 +130,10 @@ landArrs[rNum][cNum] = 9;//放置雷
 
 1. 双击已打开的数字格。
 
-> 当双击位置周围已标记雷数等于该位置数字时操作有效，相当于对该数字周围未打开的方块均进行一次左键单击操作。
+> 当双击位置周围已标记雷数等于该位置数字时操作有效，相当于对该数字周围未打开的方块均进行一次左键单击操作（此时在前面单击的设定上需要加插旗部分检查是否有雷的功能）。
 > 地雷未标记完全时使用双击无效。
 
 2. 若数字周围有标错的地雷，则游戏结束，标错的地雷上会显示一个“×”
 
 ![标记错](https://github.com/ChangeZ24/game-minesweeper/blob/master/show/showerror.gif)
-
-## 参考内容
-
-1. 实验楼扫雷实现教程
-
-https://www.shiyanlou.com/courses/144
-
-2. MDN Web Docs
-
-https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps
 
