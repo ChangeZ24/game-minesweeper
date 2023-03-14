@@ -322,7 +322,7 @@ window.addEventListener("load", function() {
   getCheckedLevel();
   init(row, col, mNum);
   this.document.querySelector(".gamearea").style.width = (Number(col) + 1) * 41 + 150 + 8 + "px";
-  this.document.querySelector(".operation").style.height = (Number(row) - 2) * 30 + "px";
+  this.document.querySelector(".operation").style.height = (Number(row) - 2) * 41 + "px";
 });
 function init(rowN, colN, mineN) {
   mineSweeperIndex = new mineSweeper("landmine", row, col, mNum);
