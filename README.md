@@ -124,7 +124,7 @@ document.oncontextmenu = function() {
 > setInterval(displayTime, 1000);
 
 2. 剩余雷数
-> 每标记一处，html更新一次内容
+> 每标记一处，剩余雷数-1，关联dom展示的数字更新
 
 ### 双击设定：满足已标记数与自身数字一致时自动打开格子
 
