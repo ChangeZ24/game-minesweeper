@@ -96,7 +96,7 @@ mineSweeper.prototype.calculateNoLandMine = function(array, x, y) {
 1. 为每个格子绑定onmousedown事件，通过其event.button值确定点击右键，同时禁用右键菜单
 ```
 // event.button确定左右键
-//events.button==0  鼠标左键 events.button==2  鼠标右键 events.button==2  鼠标左右键同时按下
+//events.button==0  鼠标左键 events.button==1  鼠标右键 events.button==2  鼠标左右键同时按下
 
 // 禁用右键菜单
 document.oncontextmenu = function() {
