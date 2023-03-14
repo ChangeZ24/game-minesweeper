@@ -20,7 +20,7 @@ button{
     margin: 20px auto;
 }
 .operation {
-    padding: 30px 18px;
+    padding: 80px 18px;
     background-color: aliceblue;
     width:150px;
     float:right;
@@ -33,11 +33,11 @@ table {
 }
 table td {
     border:2px outset #EEE;
-    font-size: 16px;
+    font-size: 22px;
     color: black;
     font-weight: 500;
-    width:22px;
-    height:22px;
+    width:33px;
+    height:33px;
     text-align:center;
     cursor:pointer;
 }
